@@ -10,5 +10,7 @@
     <h1>home page</h1>
     <a href="/">home</a>
     <a href="/about">about</a>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

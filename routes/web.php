@@ -11,5 +11,7 @@ Route::get('/home', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', ['nama' => 'Naufal Aqil']); // array berfungsi untuk memasukkan data
+    // nama sebagai variable dan Naufal Aqil sebagai nilai
+    // dia akan terpanggil jika membuka halaman about
 });
