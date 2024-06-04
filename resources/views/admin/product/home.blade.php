@@ -10,8 +10,8 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h1 class="mb-0">List Product</h1>
-                        <a href="{{ route('admin/products/create') }}" class="btn btn-primary">Add Product</a>
+                        <h1 class="mb-0">Leaderboard</h1>
+                        <a href="{{ route('admin/products/create') }}" class="btn btn-primary">Add User</a>
                     </div>
                     <hr />
                     @if(Session::has('success'))
@@ -23,9 +23,9 @@
                         <thead class="table-primary">
                             <tr>
                                 <th>#</th>
-                                <th>Title</th>
+                                <th>Username</th>
                                 <th>Category</th>
-                                <th>Price</th>
+                                <th>WPM</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -45,7 +45,7 @@
                             </tr>
                             @empty
                             <tr>
-                                <td class="text-center" colspan="5">Product not found</td>
+                                <td class="text-center" colspan="5">User not found</td>
                             </tr>
                             @endforelse
                         </tbody>

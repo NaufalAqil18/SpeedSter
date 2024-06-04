@@ -1,11 +1,10 @@
 <?php
-
+ 
 namespace App\Http\Controllers;
-
-use App\Http\Controllers\Controller;
+ 
 use Illuminate\Http\Request;
 use App\Models\Product;
-
+ 
 class ProductController extends Controller
 {
     public function index()
@@ -47,10 +46,10 @@ class ProductController extends Controller
         $products = Product::findOrFail($id)->delete();
         if ($products) {
             session()->flash('success', 'Product Deleted Successfully');
-            return redirect(route('admin/products/'));
+            return redirect(route('admin/products'));
         } else {
             session()->flash('error', 'Product Not Delete successfully');
-            return redirect(route('admin/products/'));
+            return redirect(route('admin/products'));
         }
     }
  
