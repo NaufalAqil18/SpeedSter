@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/dashboard', function () {
@@ -23,3 +23,14 @@ require __DIR__.'/auth.php';
 
 
 Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth','admin']);
+
+
+//untuk dihapus
+//===================================//
+Route::get('/home', function () {
+    return view('login2');
+});
+Route::get('/home2', function () {
+    return view('register2');
+});
+//===================================//
