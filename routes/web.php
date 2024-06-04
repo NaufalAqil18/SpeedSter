@@ -1,46 +1,25 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
+
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', function () {
-    return view('home');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/main', function () {
-    return view('main');
-});
+require __DIR__.'/auth.php';
 
 
-
-
-//halaman register dan login
-Route::get('/register', function () {
-    return view('auth.register');
-});
-
-Route::post('/register', [AuthController::class, 'register'])->name('register');
-
-Route::get('/login', function () {
-    return view('auth.login');
-});
-
-Route::post('/login', [AuthController::class, 'login'])->name('login');
-
-Route::get('/login/{provider}', [AuthController::class, 'redirectToProvider'])->name('social.login');
-Route::get('/login/{provider}/callback', [AuthController::class, 'handleProviderCallback']);
-
-
-
-
-
-
-Route::get('/about', function () {
-    return view('about', ['nama' => 'Naufal Aqil']); // array berfungsi untuk memasukkan data
-    // nama sebagai variable dan Naufal Aqil sebagai nilai
-    // dia akan terpanggil jika membuka halaman about
-});
+Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth','admin']);
