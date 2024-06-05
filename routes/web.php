@@ -8,6 +8,10 @@ use App\Http\Controllers\ProductController;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/main', function () {
+    return view('main');
+});
  
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -32,6 +36,9 @@ Route::middleware(['auth', 'admin'])->group(function () {
 });
  
 require __DIR__.'/auth.php';
+
+
+Route::get('/leaderboard', [ProductController::class, 'leaderboard']);
  
 //Route::get('admin/dashboard', [HomeController::class, 'index']);
 //Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin']);

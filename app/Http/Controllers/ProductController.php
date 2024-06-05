@@ -72,4 +72,9 @@ class ProductController extends Controller
             return redirect(route('admin/products/update'));
         }
     }
+
+    public function leaderboard() {
+        $products = Product::all();
+        return view('/leaderboard', compact('products'));
+    }
 }
