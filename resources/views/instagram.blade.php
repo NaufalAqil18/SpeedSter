@@ -1,25 +1,44 @@
-<!-- resources/views/instagram.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram</title>
+    <title>Instagram - Speedster</title>
     <link rel="stylesheet" href="css/style_instagram.css">
 </head>
 <body>
     <div class="container">
-        <h1>Instagram</h1>
-        <p>Thank you so much for thinking about supporting this project. It would not be possible without you and your continued support. You can follow us on Instagram by pressing the buttons below.</p>
-        <div>
-            <a href="https://www.instagram.com/adfaihsan?igsh=b3d5OTNsc3MzNHhv&utm_source=qr" target="_blank" class="button">
-                <div class="icon"></div>
-                @adfaihsan
-            </a>
-            <a href="https://www.instagram.com/aqil.noval?igsh=ZGJnYWdyY2lwbHEx" target="_blank" class="button">
-                <div class="icon"></div>
-                @aqil.noval
-            </a>
+        <div class="header">
+            <img src="img\LogoSpeedster.png" alt="Speedster Logo">
+            <h1>Speedster</h1>
+        </div>
+        <div class="content">
+            <h2>Instagram</h2>
+            <p>Thank you so much for thinking about supporting this project. It would not be possible without you and your continued support. You can follow us on Instagram by pressing the buttons below.</p>
+            <div class="instagram-profiles">
+                <div class="profile">
+                    <a href="https://www.instagram.com/aqil.noval?igsh=ZGJnYWdyY2lwbHEx" target="_blank">
+                        <img src="/img\ProfileIcon.png" alt="@aqil.noval">
+                        <div>@aqil.noval</div>
+                    </a>
+                </div>
+                <div class="profile">
+                    <a href="https://www.instagram.com/adfaihsan?igsh=b3d5OTNsc3MzNHhv&utm_source=qr" target="_blank">
+                        <img src="/img\ProfileIcon.png" alt="@adfaihsan">
+                        <div>@adfaihsan</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="/contact"><img src="/img\ContactIcon.png" alt="Contact"></a>
+            <a href="/support"><img src="/img\SupportIcon.png" alt="Support"></a>
+            <a href="https://github.com/NaufalAqil18/SpeedSter" target="_blank"><img src="/img\GitHubIcon.png" alt="GitHub"></a>
+            <a href="/instagram"><img src="/img\InstagramIcon.png" alt="Instagram"></a>
+            <a href="/terms"><img src="/img\TermsIcon.png" alt="Terms"></a>
+        </div>
+        <div class="footer">
+            <p>&copy; Copyright 2024</p>
         </div>
     </div>
 </body>
