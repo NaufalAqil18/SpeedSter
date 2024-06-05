@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Test with Navbar</title>
     <link rel="stylesheet" href="css/style_main.css">
+    <link rel="stylesheet" href="css/style_terms.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -56,7 +57,10 @@
 </head>
 <body>
     <header>
-        halooooo
+        <div class="header">
+            <a href="dashboard"><img src="img\LogoSpeedster.png" alt="Speedster Logo"></a>
+            <h1>Speedster</h1>
+        </div>
     </header>
 
     <main>
@@ -87,21 +91,22 @@
                     </ul>
                     <button>Try Again</button>
                 </div>
-                <canvas id="typingChart"></canvas>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="#"><i class="fas fa-envelope"></i>Contact</a>
-            <a href="#"><i class="fas fa-dollar-sign"></i>Support</a>
-            <a href="#"><i class="fab fa-github"></i>Github</a>
-            <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-            <a href="#"><i class="fas fa-file-alt"></i>Term</a>
-            <a href="leaderboard"><i class="fas fa-file-alt"></i>Leaderboard</a>
+        <div class="footer">
+            <a href="/contact"><img src="/img\ContactIcon.png" alt="Contact"></a>
+            <a href="/support"><img src="img\SupportIcon.png" alt="Support"></a>
+            <a href="https://github.com/NaufalAqil18/SpeedSter" target="_blank"><img src="img\GitHubIcon.png" alt="GitHub"></a>
+            <a href="/instagram"><img src="img\InstagramIcon.png" alt="Instagram"></a>
+            <a href="/terms"><img src="img\TermsIcon.png" alt="Terms"></a>
+            <a href="/leaderboard"><img src="img\Leaderboard.png" alt="Leaderboard"></a>
         </div>
-        <p>© 2024</p>
+        <div class="footer">
+            <p>&copy; Copyright 2024</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -15,6 +15,31 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <style>
+            body {
+                background-color: #1E1E1E;
+                color: #D4D4D4;
+            }
+            .bg-white {
+                background-color: #2D2D2D !important;
+                color: #D4D4D4;
+            }
+            .text-gray-500 {
+                color: #9E9E9E !important;
+            }
+            .text-gray-800 {
+                color: #D4D4D4 !important;
+            }
+            .border-gray-100 {
+                border-color: #3F3F3F !important;
+            }
+            .shadow-md {
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.25) !important;
+            }
+            .bg-gray-100 {
+                background-color: #2D2D2D !important;
+            }
+        </style>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
