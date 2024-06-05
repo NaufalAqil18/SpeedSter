@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SpeedSter</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="">Home</a>
-            <a href="">Contacts</a>
-            <a href="">Info</a>
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+            <a href="/main">start</a>
         </nav>
     </header>
 
@@ -22,61 +22,45 @@
             <div class="item">
                 <img src="img/img1.jpg">
                 <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="author">NAUFAL & IHSAN</div>
+                    <div class="title">SPEEDSTER</div>
+                    <div class="topic">TES KECEPATAN MENGETIK</div>
                     <div class="des">
                         <!-- lorem 50 -->
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <img src="img/img2.jpg">
                 <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="author">NAUFAL & IHSAN</div>
+                    <div class="title">SPEEDSTER</div>
+                    <div class="topic">BERPACU DENGAN WAKTU</div>
                     <div class="des">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <img src="img/img3.jpg">
                 <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="author">NAUFAL & IHSAN</div>
+                    <div class="title">SPEEDSTER</div>
+                    <div class="topic">BERPACU DENGAN BANYAK KATA</div>
                     <div class="des">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <img src="img/img4.jpg">
                 <div class="content">
-                    <div class="author">LUNDEV</div>
-                    <div class="title">DESIGN SLIDER</div>
-                    <div class="topic">ANIMAL</div>
+                    <div class="author">NAUFAL & IHSAN</div>
+                    <div class="title">SPEEDSTER</div>
+                    <div class="topic">BERSAING DENGAN YANG LAIN</div>
                     <div class="des">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
-                    </div>
-                    <div class="buttons">
-                        <button>SEE MORE</button>
-                        <button>SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +71,7 @@
                 <img src="img/img1.jpg">
                 <div class="content">
                     <div class="title">
-                        Name Slider
+                        SPEEDSTER
                     </div>
                     <div class="description">
                         Description
@@ -98,7 +82,7 @@
                 <img src="img/img2.jpg">
                 <div class="content">
                     <div class="title">
-                        Name Slider
+                        WAKTU
                     </div>
                     <div class="description">
                         Description
@@ -109,7 +93,7 @@
                 <img src="img/img3.jpg">
                 <div class="content">
                     <div class="title">
-                        Name Slider
+                        KATA
                     </div>
                     <div class="description">
                         Description
@@ -120,7 +104,7 @@
                 <img src="img/img4.jpg">
                 <div class="content">
                     <div class="title">
-                        Name Slider
+                        BERSAING
                     </div>
                     <div class="description">
                         Description
