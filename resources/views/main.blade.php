@@ -99,6 +99,7 @@
             <a href="#"><i class="fab fa-github"></i>Github</a>
             <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
             <a href="#"><i class="fas fa-file-alt"></i>Term</a>
+            <a href="leaderboard"><i class="fas fa-file-alt"></i>Leaderboard</a>
         </div>
         <p>© 2024</p>
     </footer>

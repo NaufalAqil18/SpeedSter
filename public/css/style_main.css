@@ -124,6 +124,8 @@ main {
     border-radius: 5px;
     background-color: #333A45;
     transition: transform 0.3s ease;
+    margin-top:50px;
+    margin-left: 40%;
 }
 
 .content button:active {
@@ -131,6 +133,7 @@ main {
 }
 
 .content .result-details {
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
