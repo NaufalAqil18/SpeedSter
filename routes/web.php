@@ -27,3 +27,15 @@ Route::get('/about', function () {
     // nama sebagai variable dan Naufal Aqil sebagai nilai
     // dia akan terpanggil jika membuka halaman about
 });
+
+Route::get('/support', function () {
+    return view('support');
+});
+
+Route::get('/instagram', function () {
+    return view('instagram');
+});
+
+Route::get('/terms', function () {
+    return view('terms');
+});
