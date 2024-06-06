@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="img\LogoSpeedster.png" alt="Speedster Logo">
+            <a href="dashboard"><img src="img\LogoSpeedster.png" alt="Speedster Logo"></a>
             <h1>Speedster</h1>
         </div>
         <div class="content">
@@ -35,16 +35,19 @@
             document.getElementById('feedback').style.display = 'block';
         });
     </script>
-        <div class="footer">
-            <a href="/contact"><img src="/img\ContactIcon.png" alt="Contact"></a>
-            <a href="/support"><img src="/img\SupportIcon.png" alt="Support"></a>
-            <a href="https://github.com/NaufalAqil18/SpeedSter" target="_blank"><img src="/img\GitHubIcon.png" alt="GitHub"></a>
-            <a href="/instagram"><img src="/img\InstagramIcon.png" alt="Instagram"></a>
-            <a href="/terms"><img src="/img\TermsIcon.png" alt="Terms"></a>
-        </div>
-        <div class="footer">
-            <p>&copy; Copyright 2024</p>
-        </div>
+        <footer>
+            <div class="footer">
+                <a href="/contact"><img src="/img\ContactIcon.png" alt="Contact"></a>
+                <a href="/support"><img src="img\SupportIcon.png" alt="Support"></a>
+                <a href="https://github.com/NaufalAqil18/SpeedSter" target="_blank"><img src="img\GitHubIcon.png" alt="GitHub"></a>
+                <a href="/instagram"><img src="img\InstagramIcon.png" alt="Instagram"></a>
+                <a href="/terms"><img src="img\TermsIcon.png" alt="Terms"></a>
+                <a href="/leaderboard"><img src="img\Leaderboard.png" alt="Leaderboard"></a>
+            </div>
+            <div class="footer">
+                <p>&copy; Copyright 2024</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

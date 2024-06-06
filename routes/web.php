@@ -43,22 +43,6 @@ Route::get('/leaderboard', [ProductController::class, 'leaderboard']);
 //Route::get('admin/dashboard', [HomeController::class, 'index']);
 //Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin']);
 
-
-
-
-
-
-
-//untuk dihapus
-//===================================//
-Route::get('/home', function () {
-    return view('login2');
-});
-Route::get('/home2', function () {
-    return view('register2');
-});
-
-
 Route::get('/support', function () {
     return view('support');
 });
@@ -74,5 +58,3 @@ Route::get('/terms', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-
-//================================//
