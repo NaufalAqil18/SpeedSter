@@ -73,8 +73,10 @@ class ProductController extends Controller
         }
     }
 
-    public function leaderboard() {
-        $products = Product::all();
-        return view('/leaderboard', compact('products'));
+    public function leaderboard()
+    {
+        // Mengurutkan berdasarkan kolom 'wpm' dalam urutan menurun
+        $products = Product::orderBy('price', 'desc')->get();
+        return view('leaderboard', compact('products'));
     }
 }
