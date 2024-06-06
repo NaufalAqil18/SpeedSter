@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::orderBy('id', 'desc')->get();
+        $products = Product::orderBy('price', 'desc')->get();
         $total = Product::count();
         return view('admin.product.home', compact(['products', 'total']));
     }
@@ -28,7 +28,7 @@ class ProductController extends Controller
         ]);
         $data = Product::create($validation);
         if ($data) {
-            session()->flash('success', 'Product Add Successfully');
+            session()->flash('success', 'User Add Successfully');
             return redirect(route('admin/products'));
         } else {
             session()->flash('error', 'Some problem occure');
@@ -45,10 +45,10 @@ class ProductController extends Controller
     {
         $products = Product::findOrFail($id)->delete();
         if ($products) {
-            session()->flash('success', 'Product Deleted Successfully');
+            session()->flash('success', 'User Deleted Successfully');
             return redirect(route('admin/products'));
         } else {
-            session()->flash('error', 'Product Not Delete successfully');
+            session()->flash('error', 'User Not Delete successfully');
             return redirect(route('admin/products'));
         }
     }
@@ -65,7 +65,7 @@ class ProductController extends Controller
         $products->price = $price;
         $data = $products->save();
         if ($data) {
-            session()->flash('success', 'Product Update Successfully');
+            session()->flash('success', 'User Update Successfully');
             return redirect(route('admin/products'));
         } else {
             session()->flash('error', 'Some problem occure');
