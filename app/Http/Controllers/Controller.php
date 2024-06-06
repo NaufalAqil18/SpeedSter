@@ -32,3 +32,11 @@ class TermsController extends Controller
         return view('terms');
     }
 }
+
+class ContactController extends Controller
+{
+    public function index()
+    {
+        return view('contact');
+    }
+}

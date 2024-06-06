@@ -1,10 +1,9 @@
-<!-- resources/views/terms.blade.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speedster Terms of Service</title>
+    <title>Terms - Speedster</title>
     <link rel="stylesheet" href="css/style_terms.css">
 </head>
 <body>
