@@ -1,32 +1,63 @@
 <?php
-
+ 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
+ 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/home', function () {
     return view('home');
 });
 
 Route::get('/main', function () {
     return view('main');
 });
+ 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+ 
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+ 
+Route::middleware(['auth', 'admin'])->group(function () {
+ 
+    Route::get('admin/dashboard', [HomeController::class, 'index']);
+ 
+    Route::get('/admin/products', [ProductController::class, 'index'])->name('admin/products');
+    Route::get('/admin/products/create', [ProductController::class, 'create'])->name('admin/products/create');
+    Route::post('/admin/products/save', [ProductController::class, 'save'])->name('admin/products/save');
+    Route::get('/admin/products/edit/{id}', [ProductController::class, 'edit'])->name('admin/products/edit');
+    Route::put('/admin/products/edit/{id}', [ProductController::class, 'update'])->name('admin/products/update');
+    Route::get('/admin/products/delete/{id}', [ProductController::class, 'delete'])->name('admin/products/delete');
+});
+ 
+require __DIR__.'/auth.php';
 
-Route::get('/login', function () {
-    return view('login');
+
+Route::get('/leaderboard', [ProductController::class, 'leaderboard']);
+ 
+//Route::get('admin/dashboard', [HomeController::class, 'index']);
+//Route::get('admin/dashboard', [HomeController::class, 'index'])->middleware(['auth', 'admin']);
+
+
+
+
+
+
+
+//untuk dihapus
+//===================================//
+Route::get('/home', function () {
+    return view('login2');
+});
+Route::get('/home2', function () {
+    return view('register2');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/about', function () {
-    return view('about', ['nama' => 'Naufal Aqil']); // array berfungsi untuk memasukkan data
-    // nama sebagai variable dan Naufal Aqil sebagai nilai
-    // dia akan terpanggil jika membuka halaman about
-});
 
 Route::get('/support', function () {
     return view('support');
@@ -43,3 +74,5 @@ Route::get('/terms', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+//================================//
